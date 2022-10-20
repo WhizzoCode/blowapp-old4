@@ -15,7 +15,10 @@ export default {
     }),
     html({
       attributes: {
-        html: { lang: 'en' }
+        html: {
+          lang: 'en',
+          class: 'sl-theme-dark'
+        }
       },
       meta: [
         { charset: 'utf-8' },
@@ -30,7 +33,7 @@ export default {
     copy({
       targets: [
         {
-          src: [ 'src/assets' ],
+          src: 'src/assets',
           dest: 'dist'
         },
         {
@@ -43,6 +46,10 @@ export default {
             'node_modules/source-sans/VAR/SourceSans3VF-Italic.ttf',
           ],
           dest: 'dist/source-sans'
+        },
+        {
+          src: 'node_modules/@shoelace-style/shoelace/dist/assets',
+          dest: 'dist/shoelace'
         }
       ]
     })
