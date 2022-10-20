@@ -1,6 +1,6 @@
-import { TheApp } from './lib/TheApp.js';
+import { BlowApp } from './lib/BlowApp.js';
 
 import './style.css';
 
-const app = document.createElement('the-app');
+const app = document.createElement('blow-app');
 document.body.appendChild(app);
