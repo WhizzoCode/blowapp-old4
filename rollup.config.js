@@ -32,6 +32,17 @@ export default {
         {
           src: [ 'src/assets' ],
           dest: 'dist'
+        },
+        {
+          src: [
+            'node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Roman.ttf.woff2',
+            'node_modules/source-sans/WOFF2/VAR/SourceSans3VF-Italic.ttf.woff2',
+            'node_modules/source-sans/WOFF/VAR/SourceSans3VF-Roman.ttf.woff',
+            'node_modules/source-sans/WOFF/VAR/SourceSans3VF-Italic.ttf.woff',
+            'node_modules/source-sans/VAR/SourceSans3VF-Roman.ttf',
+            'node_modules/source-sans/VAR/SourceSans3VF-Italic.ttf',
+          ],
+          dest: 'dist/source-sans'
         }
       ]
     })

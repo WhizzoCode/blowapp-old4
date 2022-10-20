@@ -26,7 +26,8 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "lit": "^2.4.0"
+    "lit": "^2.4.0",
+    "source-sans": "^3.46.0"
   },
   "devDependencies": {
     "@rollup/plugin-html": "^1.0.0",
