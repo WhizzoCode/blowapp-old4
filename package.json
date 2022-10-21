@@ -36,7 +36,7 @@
     "@web/dev-server": "^0.1.35",
     "rollup": "^3.2.3",
     "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-css-only": "^4.1.0"
+    "rollup-plugin-css-only": "^4.1.1"
   },
   "scripts": {
     "build": "rm -rf dist && rollup -c",
