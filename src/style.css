@@ -4,6 +4,8 @@ body {
 }
 
 body {
+  --sl-font-sans: 'Source Sans 3 VF';
+
   font-family: 'Source Sans 3 VF';
   margin: 0;
 }
