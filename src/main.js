@@ -4,7 +4,10 @@ import './style.css';
 
 import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path';
 import '@shoelace-style/shoelace/dist/components/split-panel/split-panel.js';
-import { BlowApp } from './lib/BlowApp.js';
+import '@shoelace-style/shoelace/dist/components/tree/tree.js';
+import '@shoelace-style/shoelace/dist/components/tree-item/tree-item.js';
+
+import './lib/BlowApp.js';
 
 setBasePath('shoelace');
 
