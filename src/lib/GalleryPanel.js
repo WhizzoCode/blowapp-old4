@@ -9,16 +9,13 @@ export class GalleryPanel extends LitElement {
   static styles = css`
 
     div {
-      padding: var(--sl-spacing-medium) 0;
+      padding: var(--sl-spacing-x-large) 0;
     }
 
     sl-tree-item::part(expand-button) {
       padding: var(--sl-spacing-2x-small);
     }
 
-    sl-tree-item::part(label) {
-      font-size: var(--sl-font-size-small);
-    }
   `;
 
   render() {

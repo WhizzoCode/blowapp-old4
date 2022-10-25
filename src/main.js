@@ -6,9 +6,11 @@ import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path';
 import '@shoelace-style/shoelace/dist/components/split-panel/split-panel.js';
 import '@shoelace-style/shoelace/dist/components/tree/tree.js';
 import '@shoelace-style/shoelace/dist/components/tree-item/tree-item.js';
+import '@shoelace-style/shoelace/dist/components/card/card.js';
 
 import './lib/BlowApp.js';
 import './lib/GalleryPanel';
+import './lib/GalleryView';
 
 setBasePath('shoelace');
 

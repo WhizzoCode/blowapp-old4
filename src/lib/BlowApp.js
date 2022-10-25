@@ -13,9 +13,12 @@ export class BlowApp extends LitElement {
       height: 100%;
     }
 
+    sl-split-panel > div {
+      overflow: scroll;
+    }
+
     sl-split-panel > div:nth-child(1) {
       background: var(--sl-color-neutral-50);
-      overflow: scroll;
     }
 
     sl-split-panel > div:nth-child(2) {
@@ -33,7 +36,7 @@ export class BlowApp extends LitElement {
         </div>
 
         <div slot="end">
-
+          <gallery-view></gallery-view>
         </div>
         
       </sl-split-panel>

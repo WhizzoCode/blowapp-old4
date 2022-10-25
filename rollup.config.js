@@ -33,7 +33,7 @@ export default {
     copy({
       targets: [
         {
-          src: 'src/assets',
+          src: [ 'src/assets', 'gallery' ],
           dest: 'dist'
         },
         {
@@ -51,7 +51,8 @@ export default {
           src: 'node_modules/@shoelace-style/shoelace/dist/assets',
           dest: 'dist/shoelace'
         }
-      ]
+      ],
+      copyOnce: true
     })
   ]
 }
