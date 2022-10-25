@@ -8,6 +8,14 @@ export class BlowApp extends LitElement {
 
   static styles = css`
 
+    sl-split-panel {
+      --divider-width: 0px;
+    }
+
+    sl-split-panel::part(divider) {
+      cursor: auto;
+    }
+
     sl-split-panel,
     sl-split-panel > div {
       height: 100%;
@@ -29,7 +37,7 @@ export class BlowApp extends LitElement {
 
   render() {
     return html`
-      <sl-split-panel position-in-pixels="250" snap="250px">
+      <sl-split-panel position-in-pixels="250" disabled primary="start">
 
         <div slot="start">
           <gallery-panel></gallery-panel>
