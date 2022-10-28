@@ -1,4 +1,6 @@
 import {LitElement, css, html} from 'lit';
+import '@shoelace-style/shoelace/dist/components/tree/tree.js';
+import '@shoelace-style/shoelace/dist/components/tree-item/tree-item.js';
 
 export class GalleryPanel extends LitElement {
 

@@ -1,4 +1,5 @@
 import {LitElement, css, html} from 'lit';
+import '@shoelace-style/shoelace/dist/components/card/card.js';
 
 export class GalleryView extends LitElement {
 
@@ -74,7 +75,7 @@ export class GalleryView extends LitElement {
         ${ allPhotos }
         <sl-card>
           <img
-            src="./gallery/${ filename }"
+            src="./assets/gallery/${ filename }"
             alt="${ filename }"
             slot="image"
           />
