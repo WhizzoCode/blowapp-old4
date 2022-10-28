@@ -75,7 +75,7 @@ export class GalleryView extends LitElement {
         ${ allPhotos }
         <sl-card>
           <img
-            src="./assets/gallery/${ filename }"
+            src="./gallery/${ filename }"
             alt="${ filename }"
             slot="image"
           />
