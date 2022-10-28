@@ -1,4 +1,7 @@
 import {LitElement, css, html} from 'lit';
+import '@shoelace-style/shoelace/dist/components/split-panel/split-panel.js';
+import './gallery-panel.js';
+import './gallery-view.js';
 
 export class BlowApp extends LitElement {
 
