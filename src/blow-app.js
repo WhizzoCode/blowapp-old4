@@ -1,5 +1,4 @@
 import {LitElement, css, html} from 'lit';
-import '@shoelace-style/shoelace/dist/components/split-panel/split-panel.js';
 import './gallery-panel.js';
 import './gallery-view.js';
 
@@ -11,46 +10,45 @@ export class BlowApp extends LitElement {
 
   static styles = css`
 
-    sl-split-panel {
-      --divider-width: 0px;
-    }
+    .layout {
+      --sl-font-sans: 'Source Sans 3 VF';
 
-    sl-split-panel::part(divider) {
-      cursor: auto;
-    }
-
-    sl-split-panel,
-    sl-split-panel > div {
+      display: flex;
       height: 100%;
+      background-color: var(--sl-color-neutral-0);
+      color: var(--sl-color-neutral-1000);
+      font-family: 'Source Sans 3 VF';
     }
 
-    sl-split-panel > div {
+    .panel,
+    .view {
       overflow: scroll;
     }
 
-    sl-split-panel > div:nth-child(1) {
-      background: var(--sl-color-neutral-50);
+    .panel {
+      width: 250px;
+      flex-shrink: 0;
     }
 
-    sl-split-panel > div:nth-child(2) {
-      background: var(--sl-color-neutral-0);
+    .view {
+      flex-grow: 1;
     }
 
   `;
 
   render() {
     return html`
-      <sl-split-panel position-in-pixels="250" disabled primary="start">
+      <div class="layout">
 
-        <div slot="start">
+        <div class="panel">
           <gallery-panel></gallery-panel>
         </div>
 
-        <div slot="end">
+        <div class="view">
           <gallery-view></gallery-view>
         </div>
-        
-      </sl-split-panel>
+
+      </div>
     `;
   }
 
