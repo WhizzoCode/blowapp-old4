@@ -1,0 +1,15 @@
+body {
+  --blow-color-shotwell-panel:  hsl(  0,  0%,  18%);
+  --blow-color-shotwell-main:   hsl(  0,  0%,  14%);
+  --blow-color-shotwell-border: hsl(  0,  0%,  11%);
+  --blow-color-shotwell-text:   hsl(  0,  0%, 100%);
+  --blow-color-shotwell-action: hsl(213, 77%,  35%);
+
+  --blow-color-vsc-tools: hsl(0, 0%, 20%);
+  --blow-color-vsc-panel: hsl(0, 0%, 15%);
+  --blow-color-vsc-main:  hsl(0, 0%, 12%);
+
+  --blow-color-panel: hsl(0, 0%, 15%);
+  --blow-color-main:  hsl(0, 0%, 12%);
+  --blow-color-text:  hsl(0, 0%, 90%);
+}

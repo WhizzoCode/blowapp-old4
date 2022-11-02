@@ -15,8 +15,8 @@ export class BlowApp extends LitElement {
 
       display: flex;
       height: 100%;
-      background-color: var(--sl-color-neutral-0);
-      color: var(--sl-color-neutral-1000);
+      background-color: var(--blow-color-shotwell-main);
+      color: var(--blow-color-text);
       font-family: 'Source Sans 3 VF';
     }
 
@@ -26,8 +26,11 @@ export class BlowApp extends LitElement {
     }
 
     .panel {
-      width: 250px;
+      width: 200px;
       flex-shrink: 0;
+      background-color: var(--blow-color-shotwell-panel);
+
+      border-right: 1px solid var(--blow-color-shotwell-border);
     }
 
     .view {

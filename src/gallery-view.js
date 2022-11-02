@@ -11,9 +11,9 @@ export class GalleryView extends LitElement {
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: var(--sl-spacing-x-large);
-      margin: var(--sl-spacing-x-large) var(--sl-spacing-x-large);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--sl-spacing-4x-large);
+      margin: var(--sl-spacing-2x-large) var(--sl-spacing-2x-large);
     }
 
     sl-card {
@@ -27,14 +27,26 @@ export class GalleryView extends LitElement {
       box-shadow: none;
     }
 
+    sl-card::part(image) {
+      overflow: visible;
+    }
+
     img {
       aspect-ratio: 1;
       object-fit: contain;
       object-position: bottom;
     }
 
+    img.selected {
+      filter:
+        drop-shadow(8px 0 0 var(--blow-color-shotwell-action))
+        drop-shadow(-8px 0 0 var(--blow-color-shotwell-action))
+        drop-shadow(0 8px 0 var(--blow-color-shotwell-action))
+        drop-shadow(0 -8px 0 var(--blow-color-shotwell-action));
+    }
+
     .title {
-      font-size: var(--sl-font-size-x-small);
+      font-size: var(--sl-font-size-small);
       font-weight: var(--sl-font-weight-light);
       text-align: center;
       white-space: nowrap;
@@ -78,6 +90,7 @@ export class GalleryView extends LitElement {
             src="./gallery/${ filename }"
             alt="${ filename }"
             slot="image"
+            class="${ filename === 'IMG_20190103_182246.jpg' ? 'selected' : '' }"
           />
           <div class="title">${ filename }</div>
         </sl-card>
