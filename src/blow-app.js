@@ -1,6 +1,4 @@
 import {LitElement, css, html} from 'lit';
-import './gallery-panel.js';
-import './gallery-view.js';
 
 export class BlowApp extends LitElement {
 
@@ -11,13 +9,8 @@ export class BlowApp extends LitElement {
   static styles = css`
 
     .layout {
-      --sl-font-sans: 'Source Sans 3 VF';
-
       display: flex;
       height: 100%;
-      background-color: var(--sl-color-neutral-0);
-      color: var(--sl-color-neutral-1000);
-      font-family: 'Source Sans 3 VF';
     }
 
     .panel,
@@ -28,6 +21,8 @@ export class BlowApp extends LitElement {
     .panel {
       width: 250px;
       flex-shrink: 0;
+      background-color: var(--color-panel);
+      border-right: 1px solid var(--color-panel-border);
     }
 
     .view {
@@ -41,11 +36,11 @@ export class BlowApp extends LitElement {
       <div class="layout">
 
         <div class="panel">
-          <gallery-panel></gallery-panel>
+          <!-- <gallery-panel></gallery-panel> -->
         </div>
 
         <div class="view">
-          <gallery-view></gallery-view>
+          <!-- <gallery-view></gallery-view> -->
         </div>
 
       </div>

@@ -1,0 +1,12 @@
+body {
+  --color-panel:        hsl(  0,  0%,  18%);
+  --color-main:         hsl(  0,  0%,  14%);
+  --color-panel-border: hsl(  0,  0%,  11%);
+  --color-text:         hsl(  0,  0%, 100%);
+  --color-action:       hsl(213, 77%,  35%);
+
+  background-color: var(--color-main);
+  color: var(--color-text);
+
+  font-family: 'Source Sans 3 VF';
+}

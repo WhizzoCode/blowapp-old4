@@ -33,14 +33,6 @@ export default {
             'node_modules/source-sans/VAR/SourceSans3VF-Italic.ttf'
           ],
           dest: 'dist/node_modules/source-sans/VAR/'
-        },
-        {
-          src: 'node_modules/@shoelace-style/shoelace/dist/themes/dark.css',
-          dest: 'dist/node_modules/@shoelace-style/shoelace/dist/themes/'
-        },
-        {
-          src: 'node_modules/@shoelace-style/shoelace/dist/assets',
-          dest: 'dist/node_modules/@shoelace-style/shoelace/dist/'
         }
       ]
     })
